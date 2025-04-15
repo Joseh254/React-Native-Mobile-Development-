@@ -1,17 +1,21 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import jacket from "./src/assets/image.jpeg"
 import MyAppLearn from './src/Components/MyAppLearn';
 import Card from './src/Components/Card';
+import Author from './src/Components/Author';
 const App = () => {
+ 
   return (
-    <View>
+    <View style={{backgroundColor:"#f8f4f4",flex:1}}>
       {/* <MyAppLearn/> */}
       <Card
-      image={require("./src/assets/image.jpeg")}      
-      subTittle={"somee description here"}
-      tittle={"red hacket"}
+      image={require("./src/assets/jacket.webp")}      
+      subTittle={"$ 100"}
+      tittle={"red jacket"} 
       
+      />
+      <Author
+      image={require('./src/assets/person.jpeg')}
       />
     </View>
   );
