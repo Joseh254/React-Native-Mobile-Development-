@@ -8,7 +8,7 @@ const Author = ({ image, name, details }) => {
       <Image style={styles.image} source={image} />
 
       <View>
-        <AppText>{name}</AppText>
+        <AppText style={styles.name}>{name}</AppText>
         <AppText>{details}</AppText>
       </View>
     </View>
@@ -20,11 +20,21 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     gap: 10,
+    backgroundColor: "#fff",
+    marginTop: 10,
+    padding: 5,
   },
   image: {
-    width: "10%",
-    borderRadius: "5%",
+    width: 50,
+    height: 50,
+    borderRadius: 25,
   },
+
+  name: {
+    textTransform: "capitalize",
+    color: "gray",
+  },
+
 });
 
 export default Author;

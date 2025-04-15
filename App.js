@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import MyAppLearn from './src/Components/MyAppLearn';
 import Card from './src/Components/Card';
 import Author from './src/Components/Author';
+import Messages from './src/Components/Messages';
 const App = () => {
  
   return (
@@ -16,7 +17,10 @@ const App = () => {
       />
       <Author
       image={require('./src/assets/person.jpeg')}
+      name={"Joseph Mbugua"}
+      details={"Affordable warm amarican jacket"}
       />
+      <Messages/>
     </View>
   );
 }
