@@ -3,12 +3,12 @@
     "name": "myProject",
     "slug": "myProject",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "potrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "../src/assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "../src/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
