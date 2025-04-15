@@ -1,9 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import AntDesign from '@expo/vector-icons/AntDesign';
 import MyAppLearn from './src/Components/MyAppLearn';
 import Card from './src/Components/Card';
 import Author from './src/Components/Author';
 import Messages from './src/Components/Messages';
+
 const App = () => {
  
   return (
@@ -13,6 +15,7 @@ const App = () => {
       image={require("./src/assets/jacket.webp")}      
       subTittle={"$ 100"}
       tittle={"red jacket"} 
+      icon={<AntDesign name="heart" size={10} color="orange" /> }
       
       />
       <Author
@@ -21,6 +24,7 @@ const App = () => {
       details={"Affordable warm amarican jacket"}
       />
       <Messages/>
+      
     </View>
   );
 }

@@ -1,16 +1,33 @@
 import React from "react";
-import { Image, StyleSheet, View, Platform, StatusBar } from "react-native";
-import AppText from "./AppText";
+import {
+  Image,
+  StyleSheet,
+  View,
+  Platform,
+  StatusBar,
+  TouchableOpacity,
+  TextInput,
+  Text,
 
-const Card = ({ image, subTittle, tittle }) => {
+} from "react-native";
+
+import AntDesign from '@expo/vector-icons/AntDesign';
+import AppText from "./AppText";
+import AppInput from "./AppInput";
+
+const Card = ({ image, subTittle, tittle, icon }) => {
   return (
     <View style={styles.card}>
-      <Image resizeMode="contain" source={image} style={styles.image} />
-
+      <TouchableOpacity>
+        <Image resizeMode="contain" source={image} style={styles.image} />
+      </TouchableOpacity>
       <View style={styles.detailsContainer}>
         <AppText style={styles.tittle}>{tittle}</AppText>
         <AppText style={styles.subTittle}>{subTittle}</AppText>
+        <AppText style={styles.icon}>{icon} </AppText>
       </View>
+    <Text>Name</Text>
+      <AppInput placeholder="Your name:" icon={<AntDesign name="lock" size={24} color="black" />}/>
     </View>
   );
 };
@@ -37,6 +54,14 @@ const styles = StyleSheet.create({
   subTittle: {
     color: "green",
   },
+  icon: {
+    color: "red",
+    marginTop: 5,
+  },
+  input:{
+    borderBottomColor:"orange",
+    borderBottomWidth:1
+  }
 });
 
 export default Card;

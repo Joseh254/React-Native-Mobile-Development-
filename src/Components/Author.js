@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     textTransform: "capitalize",
     color: "gray",
   },
-
 });
 
 export default Author;
